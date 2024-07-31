@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Reply</title>
+</head>
+<body>
+    <h1>Distance and Price Calculation</h1>
+
+    <p>The distance you calculated is: <span id="distance"></span></p>
+    <p>The price for the distance is: $<span id="price"></span></p>
+
+    <script>
+        // Assuming you have variables holding the calculated distance and price
+        var calculatedDistance = 100; // Replace with your actual calculated distance
+        var calculatedPrice = 50.25;   // Replace with your actual calculated price
+
+        // Display the calculated distance and price in the HTML
+        document.getElementById("distance").textContent = calculatedDistance.toFixed(2);
+        document.getElementById("price").textContent = calculatedPrice.toFixed(2);
+    </script>
+</body>
+</html>

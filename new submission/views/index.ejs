@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <title>airport ticket calculator</title>
+</head>
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/">Supermarket App</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="/cart">Add to cart</a>
+          </li> 
+          
+          </li>
+        </ul>
+      </div>
+    </div>
+</nav>
+<body>
+    <div class="text-center">
+        <h1>Distance Calculator</h1>
+        <form action="/reply" method="GET">
+            <label for="lat1">Latitude 1:</label>
+            <input class="form-control" type="text" id="lat1" name="lat1" placeholder="Enter latitude 1" required>
+            <br>
+            <label for="lng1">Longitude 1:</label>
+            <input class="form-control" type="text" id="lng1" name="lng1" placeholder="Enter longitude 1" required>
+            <br>
+            <label for="lat2">Latitude 2:</label>
+            <input class="form-control" type="text" id="lat2" name="lat2" placeholder="Enter latitude 2" required>
+            <br>
+            <label for="lng2">Longitude 2:</label>
+            <input class="form-control" type="text" id="lng2" name="lng2" placeholder="Enter longitude 2" required>
+            <br>
+            <button type="submit" class="btn btn-primary">Calculate Distance</button>
+        </form>
+            <form class="text-center" action="/payment" method="GET">
+                <button class="btn btn-primary"type="submit"action="/payment" method="GET">Payment</button>
+
+        
+        <form>
+    </div>
+</body>
+<style>
+    body {
+        background-image: url('"C:\rp stuff\image\map.jpg"'); /* Path to your image */
+        background-size: cover; /* Cover the entire page */
+        background-repeat: no-repeat; /* Do not repeat the image */
+        background-position: center; /* Center the image */
+        height: 100vh; /* Full height */
+        margin: 0; /* Remove default margin */
+    }
+</style>
+    <style>
+        body {
+            background-image: url('p"C:\Users\23010587\OneDrive - Republic Polytechnic\Desktop\rp y2 sem 1\C237 SOFTWARE APPLICATION\L9\23010587_Chia_Jun_Yi_C237_2D_E64A_ CA2Submission\new submission\public\image\ticket.jpg"');
+            background-size: cover;
+            background-position: center;
+            height: 100vh; /* Ensure the background covers the entire viewport */
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .container {
+            max-width: 600px;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+            border-radius: 10px;
+            text-align: center;
+        }
+        h2 {
+            margin-top: 100;
+        }
+        p {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+
+
+    <div id="result">
+        <% if (typeof distance !== 'undefined') { %>
+            <p>Distance: <%= distance %> kilometers</p>
+        <% } %>
+    </div>
+</body>
+
+</html>

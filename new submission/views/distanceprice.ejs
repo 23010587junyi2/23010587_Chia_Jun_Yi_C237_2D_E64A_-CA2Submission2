@@ -1,0 +1,21 @@
+<!-- views/distancePrice.ejs -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Distance and Price Calculation</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <h1>Distance and Price Calculation</h1>
+    <div>
+        <p><strong>Latitude 1:</strong> <%= lat1 %></p>
+        <p><strong>Longitude 1:</strong> <%= lng1 %></p>
+        <p><strong>Latitude 2:</strong> <%= lat2 %></p>
+        <p><strong>Longitude 2:</strong> <%= lng2 %></p>
+        <p><strong>Distance:</strong> <%= distance.toFixed(2) %> kilometers</p>
+        <p><strong>Total Price:</strong> $<%= totalPrice.toFixed(2) %></p>
+    </div>
+</body>
+</html>
